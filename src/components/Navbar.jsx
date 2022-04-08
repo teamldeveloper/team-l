@@ -20,7 +20,7 @@ const Navbar = () => {
           <div className="flex items-center ">
             <a href="#home" className="flex items-center">
               <img src={images.logo} alt="logo" className="h-10 mr-3" />
-              <span className=" text-xl font-semibold text-opacity-80">
+              <span className=" text-xl font-medium text-black/90">
                 Team-L
               </span>
             </a>
@@ -48,7 +48,7 @@ const Navbar = () => {
               <li key={item.name} className="w-full md:w-auto">
                 <a
                   href={`${item.href}`}
-                  className={`uppercase font-medium block py-2  ${
+                  className={`uppercase  block py-2  ${
                     item.current
                       ? " text-blue-700"
                       : "text-gray-700 hover:text-black"
