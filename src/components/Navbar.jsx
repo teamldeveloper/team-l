@@ -60,7 +60,7 @@ const Navbar = () => {
                         nav[index].current = false;
                       }
                     });
-
+                    setIsNavbarOpen(false);
                     setNavigation(nav);
                   }}
                 >

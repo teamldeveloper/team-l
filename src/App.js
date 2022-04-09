@@ -1,4 +1,11 @@
-import { Navbar, Hero, FeatureApp } from "./components";
+import {
+  Navbar,
+  Hero,
+  FeatureApp,
+  OurTeam,
+  ContactUs,
+  Footer,
+} from "./components";
 import "./App.css";
 
 function App() {
@@ -7,7 +14,9 @@ function App() {
       <Navbar />
       <Hero />
       <FeatureApp />
-      
+      <OurTeam />
+      <ContactUs />
+      <Footer />
     </div>
   );
 }
