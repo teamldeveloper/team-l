@@ -1,14 +1,14 @@
-import { Navbar } from "./components";
+import { Navbar, Hero, FeatureApp } from "./components";
 import "./App.css";
-import Hero from "./components/Hero";
 
 function App() {
   return (
     <div className="App bg-white ">
       <Navbar />
       <Hero />
+      <FeatureApp />
+      
     </div>
-    
   );
 }
 

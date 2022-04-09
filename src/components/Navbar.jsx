@@ -4,7 +4,7 @@ import { images } from "../constants";
 
 const navigationList = [
   { name: "home", href: "#home", current: true },
-  { name: "featured app", href: "#featured_app", current: false },
+  { name: "feature app", href: "#feature_app", current: false },
   { name: "our team", href: "#our_team", current: false },
   { name: "contact us", href: "#contact_us", current: false },
 ];
@@ -20,9 +20,7 @@ const Navbar = () => {
           <div className="flex items-center ">
             <a href="#home" className="flex items-center">
               <img src={images.logo} alt="logo" className="h-10 mr-3" />
-              <span className=" text-xl font-medium text-black/90">
-                Team-L
-              </span>
+              <span className=" text-xl font-medium text-black/90">Team-L</span>
             </a>
           </div>
 
