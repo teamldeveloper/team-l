@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { images } from "../constants";
 import SectionWrapper from "./SectionWrapper";
 import Title from "./Title";
@@ -26,7 +27,8 @@ const Descrpition = () => {
     <p className="text-lg text-black/90 py-6 md:text-left md:text-2xl">
       <span className="font-medium text-black ">Debt Record </span>is your
       personal assistant to help you keep track of your day-to-day debt/payback
-      and help you along the way to keep making your life better.
+      and help you along the way to keep making your life better{'. '} 
+      <Link className="text-blue-700 uppercase text-lg" to="/DebtRecord/#">more info</Link>
     </p>
   );
 };
@@ -34,7 +36,11 @@ const Descrpition = () => {
 const DownloadButton = () => {
   return (
     <div className="w-44 m-auto md:m-0 md:w-48">
-      <a href="https://play.google.com/store/apps/details?id=com.teaml.debt_record" target="_blank" rel="noreferrer">
+      <a
+        href="https://play.google.com/store/apps/details?id=com.teaml.debt_record"
+        target="_blank"
+        rel="noreferrer"
+      >
         <img
           srcset={`${images.play_store}v=a3894d71e1 480w,
                                 ${images.play_storex2} 768w,

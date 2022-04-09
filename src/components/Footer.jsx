@@ -24,4 +24,4 @@ const SocialMedia = () => {
   );
 };
 
-export default SectionWrapper(Footer, "footer", "bg-black");
+export default SectionWrapper(Footer, "footer", "bg-black/95");

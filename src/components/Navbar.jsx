@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
+import { Link, NavLink } from "react-router-dom";
 import { images } from "../constants";
 
 const navigationList = [
-  { name: "home", href: "#home", current: true },
-  { name: "feature app", href: "#feature_app", current: false },
-  { name: "our team", href: "#our_team", current: false },
-  { name: "contact us", href: "#contact_us", current: false },
+  { name: "home", href: "/", current: true },
+  { name: "feature app", href: "/#feature_app", current: false },
+  { name: "our team", href: "/#our_team", current: false },
+  { name: "contact us", href: "/#contact_us", current: false },
 ];
 
 const Navbar = () => {
@@ -15,7 +16,7 @@ const Navbar = () => {
 
   return (
     <nav className="border-2 border-solid border-black/10  py-2 px-2  ">
-      <div className="md:w-3/4 md:mx-auto">
+      <div className="lg:w-3/4  sm:w-[95%] sm:m-auto">
         <div className=" flex flex-wrap items-center justify-between">
           <div className="flex items-center ">
             <a href="#home" className="flex items-center">
@@ -44,15 +45,15 @@ const Navbar = () => {
           >
             {navigation.map((item) => (
               <li key={item.name} className="w-full md:w-auto">
-                <a
-                  href={`${item.href}`}
-                  className={`uppercase  block py-2  ${
+                <NavLink
+                  to={`${item.href}`}
+                  className={`uppercase  block py-2 transition duration-300 ${
                     item.current
                       ? " text-blue-700"
                       : "text-gray-700 hover:text-black"
                   }`}
                   onClick={() => {
-                    const nav = navigation.slice();
+                    /*  const nav = navigation.slice();
                     nav.forEach((currentItem, index) => {
                       if (item.name === currentItem.name) {
                         nav[index].current = true;
@@ -60,12 +61,12 @@ const Navbar = () => {
                         nav[index].current = false;
                       }
                     });
+                    setNavigation(nav); */
                     setIsNavbarOpen(false);
-                    setNavigation(nav);
                   }}
                 >
                   {item.name}
-                </a>
+                </NavLink>
               </li>
             ))}
           </ul>
