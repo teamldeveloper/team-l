@@ -1,13 +1,12 @@
-import { Navbar, FeatureApp, Footer } from "../../components";
-import { Header } from "./components";
+import { Footer, Navbar } from "../../components";
+import { AboutApp, Header } from "./components";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
       <Header />
-      <FeatureApp />
-
+      <AboutApp />
       <Footer />
     </div>
   );

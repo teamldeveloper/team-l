@@ -35,8 +35,8 @@ const TeamProfile = ({ profileImg, name, position }) => {
         className="h-28 w-28 md:h-36 md:w-36 border-2 rounded-full bg-grey"
         alt={name}
       />
-      <h6 className="text-xl font-medium pt-5 pb-1 md:text-2xl">{name}</h6>
-      <p className="text-lg  md:text-xl text-black/90 ">{position}</p>
+      <h6 className="text-xl font-medium pt-5 pb-1 md:text-xl">{name}</h6>
+      <p className="text-lg  text-black/80 ">{position}</p>
     </div>
   );
 };
