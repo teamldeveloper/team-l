@@ -2,7 +2,7 @@ import SectionWrapper from "./SectionWrapper";
 
 const Hero = () => {
   return (
-    <div className="  md:h-3/4 flex items-center justify-center flex-col ">
+    <div className=" md:h-3/4 flex items-center justify-center flex-col ">
       <div className=" w-full text-2xl text-white md:text-4xl pb-4 font-medium">
         Te-<span className="text-8xl md:text-9xl font-oldEnglish">L</span>-am
       </div>

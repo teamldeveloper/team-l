@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { images } from "../constants";
 
-const navigationList = [
+const navigation = [
   { name: "home", href: "/", current: true },
   { name: "feature app", href: "/#feature_app", current: false },
   { name: "our team", href: "/#our_team", current: false },
@@ -12,7 +12,7 @@ const navigationList = [
 
 const Navbar = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
-  const [navigation, setNavigation] = useState(navigationList);
+  //const [navigation, setNavigation] = useState(navigationList);
 
   return (
     <nav className="border-2 border-solid border-black/10  py-2 px-2  ">
