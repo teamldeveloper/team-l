@@ -27,7 +27,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/DebtRecord" element={<DebtRecordApp />} />
-        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+        <Route path="/PrivacyPolicy/" element={<PrivacyPolicy />} />
       </Routes>
     </div>
   );
