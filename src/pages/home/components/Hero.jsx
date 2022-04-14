@@ -1,4 +1,6 @@
-import SectionWrapper from "./SectionWrapper";
+import {
+  SectionWrapper
+} from "../../../components";
 
 const Hero = () => {
   return (

@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
-import AppUI from "./AppUI";
-import GetItOnGooglePlay from "./GetItOnGooglePlay";
-import SectionWrapper from "./SectionWrapper";
-import Title from "./Title";
+import {
+  SectionWrapper,
+  Title,
+  GetItOnGooglePlay,
+  AppUI,
+} from "../../../components";
 
 const FeatureApp = () => {
   return (

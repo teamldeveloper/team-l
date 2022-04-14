@@ -39,7 +39,7 @@ const Navbar = () => {
 
           <ul
             className={
-              "flex flex-col items-center w-full mt-4 md:mt-0 md:space-x-6 md:flex-row md:flex md:w-auto " +
+              "transition duration-300 flex flex-col items-center w-full mt-4 md:mt-0 md:space-x-6 md:flex-row md:flex md:w-auto " +
               (isNavbarOpen ? "flex " : "hidden")
             }
           >
@@ -47,7 +47,7 @@ const Navbar = () => {
               <li key={item.name} className="w-full md:w-auto">
                 <NavLink
                   to={`${item.href}`}
-                  className={`uppercase  block py-2 transition duration-300 ${
+                  className={`uppercase  block py-2  ${
                     item.current
                       ? " text-blue-700"
                       : "text-gray-700 hover:text-black"

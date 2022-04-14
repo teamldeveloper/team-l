@@ -1,11 +1,6 @@
-import {
-  Navbar,
-  Hero,
-  FeatureApp,
-  OurTeam,
-  ContactUs,
-  Footer,
-} from "../components";
+import { Hero, FeatureApp, OurTeam, ContactUs } from "./components";
+
+import { Navbar, Footer } from "../../components";
 
 const Home = () => {
   return (

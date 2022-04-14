@@ -1,5 +1,5 @@
-import SectionWrapper from "./SectionWrapper";
-import Title from "./Title";
+import {SectionWrapper, Title} from "../../../components";
+
 
 const ContactUs = () => {
   return (

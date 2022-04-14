@@ -1,6 +1,6 @@
-import { images } from "../constants";
-import SectionWrapper from "./SectionWrapper";
-import Title from "./Title";
+import { images } from "../../../constants";
+import SectionWrapper from "../../../components/SectionWrapper";
+import Title from "../../../components/Title";
 
 const OurTeam = () => {
   return (
