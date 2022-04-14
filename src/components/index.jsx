@@ -5,3 +5,4 @@ export { default as AppUI } from "./AppUI";
 export { default as SectionWrapper } from "./SectionWrapper";
 export { default as Title } from "./Title";
 export { default as GetItOnGooglePlay } from "./GetItOnGooglePlay";
+export { default as Hyperlink } from "./Hyperlink";

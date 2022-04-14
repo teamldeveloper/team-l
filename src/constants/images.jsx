@@ -17,7 +17,6 @@ export default {
   logo,
   app_ui,
   app_logo,
-  play_store,
 
   mustafa,
   mahmood,
