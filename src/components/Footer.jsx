@@ -1,5 +1,6 @@
 import { FaFacebookF, FaTelegramPlane, FaYoutube } from "react-icons/fa";
 import SectionWrapper from "./SectionWrapper";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -8,8 +9,8 @@ const Footer = () => {
         <SocialMedia />
         <p className="pt-2">Copyright © 2022 Team-L All Rights Reserved.</p>
       </div>
-      {/* TODO: Replace with privacy policy page */}
-      <a href="/">Privacy Policy</a>
+      
+      <Link to="/PrivacyPolicy/#">Privacy Policy</Link>
     </div>
   );
 };

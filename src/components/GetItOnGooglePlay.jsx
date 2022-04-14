@@ -1,8 +1,8 @@
 import { images } from "../constants";
 
-const GetItOnGooglePlay = () => {
+const GetItOnGooglePlay = ({ className }) => {
   return (
-    <div className="w-44 m-auto md:m-0 md:w-48">
+    <div className={`w-44 m-auto md:m-0 md:w-48 ${className}`}>
       <a
         href="https://play.google.com/store/apps/details?id=com.teaml.debt_record"
         target="_blank"

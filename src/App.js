@@ -1,7 +1,6 @@
-
 import React, { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { DebtRecordApp, Home } from "./pages";
+import { DebtRecordApp, Home, PrivacyPolicy } from "./pages";
 
 function App() {
   const { pathname, hash, key } = useLocation();
@@ -28,6 +27,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/DebtRecord" element={<DebtRecordApp />} />
+        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
       </Routes>
     </div>
   );

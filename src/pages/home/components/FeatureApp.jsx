@@ -13,14 +13,11 @@ const FeatureApp = () => {
         <Title value="Feature App" />
         <Descrpition />
         {/* TODO: find a good way to make it responsive */}
-        <div className="hidden md:inline-flex">
-          <GetItOnGooglePlay />
-        </div>
+
+        <GetItOnGooglePlay className="hidden md:inline-flex" />
       </div>
       <AppUI />
-      <div className="md:hidden">
-        <GetItOnGooglePlay />
-      </div>
+      <GetItOnGooglePlay className="md:hidden" />
     </div>
   );
 };
