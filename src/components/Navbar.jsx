@@ -49,7 +49,7 @@ const Navbar = () => {
                   to={`${item.href}`}
                   className={`uppercase  block py-2  ${
                     item.current
-                      ? " text-blue-700"
+                      ? " text-blue-700 font-medium"
                       : "text-gray-700 hover:text-black"
                   }`}
                   onClick={() => {

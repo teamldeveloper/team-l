@@ -202,6 +202,26 @@ const Description = () => {
           </Hyperlink>
         </li>
       </ul>
+      <SubTitle2>Google Account Permission</SubTitle2>
+      <Paragraph>
+        The App may - if you choose to sign in with Google - access your Google
+        basic account information, including your name, email, and profile
+        picture URL. This information is only stored on your device and we use
+        this information to allow you to know which account you are signing.
+      </Paragraph>
+      <SubTitle2>Google Drive Permission</SubTitle2>
+      <Paragraph>
+        To allow you to create a backup/restore your data, we need your
+        permission to use the <strong>Application Data folder </strong>  This folder is
+        only accessible by our application and its contents are hidden from
+        other Drive apps.We don't keep or access any of your sensitive personal
+        data.
+      </Paragraph>
+      <Paragraph>
+        You can delete the application data folder when uninstalls your app from
+        Google drive. And you can also delete your app’s data folder manually.
+        NOTE: ALL BACKUP DATA WILL BE DELETED ALSO.
+      </Paragraph>
       <SubTitle1>Security</SubTitle1>
       <Paragraph>
         We value your trust in providing us your Personal Information, thus we
@@ -274,7 +294,7 @@ const SubTitle1 = (props) => {
   return (
     <h4
       {...props}
-      className={`py-2 font-medium text-xl text-blue-700 ${props.className}`}
+      className={`py-2 font-bold text-2xl text-blue-700 ${props.className}`}
     >
       {props.children}
     </h4>
@@ -285,7 +305,7 @@ const SubTitle2 = (props) => {
   return (
     <h5
       {...props}
-      className={`py-2 font-medium text-lg text-blue-500 ${props.className}`}
+      className={`py-2 font-medium text-xl  ${props.className}`}
     >
       {props.children}
     </h5>
