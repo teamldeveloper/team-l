@@ -1,0 +1,2 @@
+#Admob
+google.com, pub-1189871845147913, DIRECT, f08c47fec0942fa0
