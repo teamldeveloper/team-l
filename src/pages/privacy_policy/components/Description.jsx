@@ -4,7 +4,7 @@ const Description = () => {
   return (
     <div className=" text-left ">
       <Paragraph>
-        Team-L built the Debt Record app as an Ad Supported app. This SERVICE is
+        Team-L built the Debt Record app as a free app. This SERVICE is
         provided by Team-L at no cost and is intended for use as is.
       </Paragraph>
       <Paragraph>
@@ -92,7 +92,7 @@ const Description = () => {
             </Hyperlink>
           </li>
 
-          <li>
+          {/* <li>
             <Hyperlink
               href="https://support.google.com/admob/answer/6128543?hl=en"
               target="_blank"
@@ -100,7 +100,7 @@ const Description = () => {
             >
               AdMob
             </Hyperlink>
-          </li>
+          </li> */}
         </ul>
       </Paragraph>
 
@@ -163,7 +163,7 @@ const Description = () => {
       <SubTitle1>
         Detailed Information on the Processing of Your Personal Data
       </SubTitle1>
-      <SubTitle2>Advertising</SubTitle2>
+      {/* <SubTitle2>Advertising</SubTitle2>
       <Paragraph>
         We may use Service providers to show advertisements to You to help
         support and maintain Our Service.
@@ -201,7 +201,7 @@ const Description = () => {
             https://policies.google.com/privacy
           </Hyperlink>
         </li>
-      </ul>
+      </ul> */}
       <SubTitle2>Google Account Permission</SubTitle2>
       <Paragraph>
         The App may - if you choose to sign in with Google - access your Google

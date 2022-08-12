@@ -12,7 +12,7 @@ const Header = () => {
       <div className=" p-8 bg-gray-100 w-full ">
         <Title className="pb-1" value="Privacy Policy " />
         <h3 className="text-lg">
-          This policy is effective as of 2022-April-16
+          This policy is effective as of 2022-Augest-12
         </h3>
       </div>
     </div>
