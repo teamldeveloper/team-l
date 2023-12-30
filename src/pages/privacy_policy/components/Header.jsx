@@ -10,9 +10,9 @@ const Header = () => {
         className="pb-6 object-contain px-10 "
       />
       <div className=" p-8 bg-gray-100 w-full ">
-        <Title className="pb-1" value="Privacy Policy " />
+        <Title className="pb-1" value="Privacy Policy "/>
         <h3 className="text-lg">
-          This policy is effective as of 2022-Augest-12
+          This policy is effective as of 2024-January-1
         </h3>
       </div>
     </div>

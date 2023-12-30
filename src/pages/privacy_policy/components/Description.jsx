@@ -4,8 +4,8 @@ const Description = () => {
   return (
     <div className=" text-left ">
       <Paragraph>
-        Team-L built the Debt Record app as a free app. This SERVICE is
-        provided by Team-L at no cost and is intended for use as is.
+        Team-L built the Debt Record app as a free app. This SERVICE is provided
+        by Team-L at no cost and is intended for use as is.
       </Paragraph>
       <Paragraph>
         This page is used to inform visitors regarding our policies with the
@@ -206,22 +206,54 @@ const Description = () => {
       <Paragraph>
         The App may - if you choose to sign in with Google - access your Google
         basic account information, including your name, email, and profile
-        picture URL. This information is only stored on your device and we use
-        this information to allow you to know which account you are signing.
+        picture URL. We only store your email in our server and you can delete
+        your information at any time by deleting your account{" "}
+        <Hyperlink href="PrivacyPolicy/#deleteAccount">Learn how</Hyperlink>
       </Paragraph>
       <SubTitle2>Google Drive Permission</SubTitle2>
       <Paragraph>
         To allow you to create a backup/restore your data, we need your
-        permission to use the <strong>Application Data folder </strong>  This folder is
-        only accessible by our application and its contents are hidden from
-        other Drive apps.We don't keep or access any of your sensitive personal
-        data.
+        permission to use the <strong>Application Data folder </strong> This
+        folder is only accessible by our application and its contents are hidden
+        from other Drive apps.We don't keep or access any of your sensitive
+        personal data.
       </Paragraph>
       <Paragraph>
         You can delete the application data folder when uninstalls your app from
         Google drive. And you can also delete your app’s data folder manually.
         NOTE: ALL BACKUP DATA WILL BE DELETED ALSO.
       </Paragraph>
+      <SubTitle2>Read Contact Permission</SubTitle2>
+      <Paragraph>
+        We need your permission to access your contact info, to allow you to add
+        new people from your contact by using the{" "}
+        <strong>'Add from Contact'</strong> feature to facilitate the seamless
+        addition of new people.
+      </Paragraph>
+
+      <div id="deleteAccount">
+        <SubTitle1>Deleting your Account </SubTitle1>
+        <Paragraph>
+          You have the option to delete your account at any time through our
+          in-app <strong>'Delete Account'</strong> feature. When you choose to
+          delete your account, you will permanently remove your backup data, and
+          restoration will no longer be possible<br></br>
+          To initiate the account deletion process, follow these steps:
+          <ol className="list-disc pl-6 break-words">
+            <li>Open Debt Record App.</li>
+            <li>Tap the 'Backup & Restore' icon.</li>
+            <li>Tap on 'More Options,' and then select 'Delete Account'</li>
+          </ol>
+          <Paragraph>
+            <strong>
+              Please be aware that upon deleting your account, you will
+              permanently remove your Google Drive backup associated with the
+              account.
+            </strong>
+          </Paragraph>
+        </Paragraph>
+      </div>
+
       <SubTitle1>Security</SubTitle1>
       <Paragraph>
         We value your trust in providing us your Personal Information, thus we
@@ -303,10 +335,7 @@ const SubTitle1 = (props) => {
 
 const SubTitle2 = (props) => {
   return (
-    <h5
-      {...props}
-      className={`py-2 font-medium text-xl  ${props.className}`}
-    >
+    <h5 {...props} className={`py-2 font-medium text-xl  ${props.className}`}>
       {props.children}
     </h5>
   );
