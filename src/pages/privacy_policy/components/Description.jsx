@@ -242,7 +242,8 @@ const Description = () => {
           <ol className="list-disc pl-6 break-words">
             <li>Open Debt Record App.</li>
             <li>Tap the 'Backup & Restore' icon.</li>
-            <li>Tap on 'More Options,' and then select 'Delete Account'</li>
+            <li>Sign in with your account</li>
+            <li>Tap on 'More Options'icon, and then select 'Delete Account'</li>
           </ol>
           <Paragraph>
             <strong>
@@ -250,6 +251,11 @@ const Description = () => {
               permanently remove your Google Drive backup associated with the
               account.
             </strong>
+          </Paragraph>
+
+          <SubTitle2>Data Retention</SubTitle2>
+          <Paragraph>
+          Debt Record will generally retain your personal information until your account is deleted.
           </Paragraph>
         </Paragraph>
       </div>
