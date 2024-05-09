@@ -75,12 +75,12 @@ const Home = () => {
             // This gives you a Google Access Token. You can use it to access the Google API.
             const credential = GoogleAuthProvider.credentialFromResult(result);
             const token = credential.accessToken;
-            console.log("Token: " + credential.accessToken);
             localStorage.setItem("credential", token);
             // IdP data available using getAdditionalUserInfo(result)
           })
           .catch((error) => {
             // Handle Errors here.
+            
             console.log(error);
             // The AuthCredential type that was used.
           });
@@ -93,7 +93,7 @@ const Home = () => {
       } else {
         setIsSignIn((value) => false);
         setUser((value) => null);
-        console.log("User is Sign in ");
+        console.log("User is Sign out ");
         logout();
       }
     });
