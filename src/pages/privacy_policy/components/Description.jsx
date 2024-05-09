@@ -1,4 +1,6 @@
 import { SectionWrapper, Hyperlink } from "../../../components";
+import { Link } from "react-router-dom";
+
 
 const Description = () => {
   return (
@@ -244,18 +246,26 @@ const Description = () => {
             <li>Tap the 'Backup & Restore' icon.</li>
             <li>Sign in with your account</li>
             <li>Tap on 'More Options'icon, and then select 'Delete Account'</li>
+            <li>You can also delete your account from{"  "}
+            <Link
+              className=" text-blue-700  text-lg"
+              to="/DeleteAccount/#"
+            >
+              Delete Account Page
+            </Link></li>
           </ol>
           <Paragraph>
             <strong>
               Please be aware that upon deleting your account, you will
               permanently remove your Google Drive backup associated with the
               account.
-            </strong>
+            </strong>{" "}
+           
           </Paragraph>
-
           <SubTitle2>Data Retention</SubTitle2>
           <Paragraph>
-          Debt Record will generally retain your personal information until your account is deleted.
+            Debt Record will generally retain your personal information until
+            your account is deleted.
           </Paragraph>
         </Paragraph>
       </div>

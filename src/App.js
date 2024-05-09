@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { DebtRecordApp, Home, PrivacyPolicy } from "./pages";
+import { DebtRecordApp, Home, PrivacyPolicy, DeleteAccount } from "./pages";
+import { GoogleOAuthProvider } from "@react-oauth/google";
 
 function App() {
   const { pathname, hash, key } = useLocation();
@@ -23,13 +24,18 @@ function App() {
   }, [pathname, hash, key]); // do this on route change
 
   return (
-    <div className="App bg-white text-center ">
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/DebtRecord" element={<DebtRecordApp />} />
-        <Route path="/PrivacyPolicy/" element={<PrivacyPolicy />} />
-      </Routes>
-    </div>
+    <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_API_TOKEN}>
+      {
+        <div className="App bg-white text-center ">
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/DebtRecord" element={<DebtRecordApp />} />
+            <Route path="/DeleteAccount" element={<DeleteAccount />} />
+            <Route path="/PrivacyPolicy/" element={<PrivacyPolicy />} />
+          </Routes>
+        </div>
+      }
+    </GoogleOAuthProvider>
   );
 }
 

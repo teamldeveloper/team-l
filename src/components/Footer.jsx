@@ -7,7 +7,7 @@ const Footer = () => {
     <div className=" text-white/50 flex flex-col justify-center space-y-2 items-center md:flex-row md:justify-between ">
       <div className="flex flex-col items-center md:items-start">
         <SocialMedia />
-        <p className="pt-2">Copyright © 2022 Team-L All Rights Reserved.</p>
+        <p className="pt-2">Copyright © {(new Date().getFullYear())} Team-L All Rights Reserved.</p>
       </div>
       
       <Link to="/PrivacyPolicy/#">Privacy Policy</Link>
