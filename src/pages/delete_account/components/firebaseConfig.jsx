@@ -5,7 +5,7 @@
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
     apiKey: process.env.REACT_APP_FIREBASE_API_TOKEN,
-    authDomain: "teaml.netlify.app/",
+    authDomain: "debt-record.firebaseapp.com",
     projectId: "debt-record",
     storageBucket: "debt-record.appspot.com",
     messagingSenderId: process.env.REACT_APP_FIREBASE_MASSEING_SENDER_ID,
