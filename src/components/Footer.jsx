@@ -8,9 +8,13 @@ const Footer = () => {
       <div className="flex flex-col items-center md:items-start">
         <SocialMedia />
         <p className="pt-2">Copyright © {(new Date().getFullYear())} Team-L All Rights Reserved.</p>
+       
       </div>
-      
+      <div  className="flex flex-col items-center md:items-start" >
       <Link to="/PrivacyPolicy/#">Privacy Policy</Link>
+      <Link to="/TermsOfService/#">Terms of Service</Link>
+      </div>
+    
     </div>
   );
 };

@@ -12,6 +12,7 @@ import play_store2 from "../assets/play-store@2x.png";
 import play_store3 from "../assets/play-store@3x.png";
 
 import privacy_poilcy from "../assets/privacy_policy.png";
+import terms_of_service from "../assets/terms-of-service.png";
 
 export default {
   logo,
@@ -23,6 +24,7 @@ export default {
   ali,
 
   privacy_policy: privacy_poilcy,
+  terms_of_service: terms_of_service,
 
   play_store: play_store,
   play_storex2: play_store2,

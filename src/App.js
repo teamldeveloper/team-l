@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { DebtRecordApp, Home, PrivacyPolicy, DeleteAccount } from "./pages";
+import { DebtRecordApp, Home, PrivacyPolicy,TermsOfService, DeleteAccount } from "./pages";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 
 function App() {
@@ -32,6 +32,7 @@ function App() {
             <Route path="/DebtRecord" element={<DebtRecordApp />} />
             <Route path="/DeleteAccount" element={<DeleteAccount />} />
             <Route path="/PrivacyPolicy/" element={<PrivacyPolicy />} />
+            <Route path="/TermsOfService/" element={<TermsOfService/>} />
           </Routes>
         </div>
       }
